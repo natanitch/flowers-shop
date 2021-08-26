@@ -3,150 +3,165 @@
    <head>
       <meta charset="utf-8">
       <link rel="stylesheet" href="style.css">
-      <link rel="stylesheet" href="https://fonts.google.com/specimen/Playfair+Display?query=Playfair+Display" type="text/css">
-      <link rel="stylesheet" href="https://fonts.google.com/specimen/Montserrat?query=montserrat" type="text/css">
+      <link rel="preload" href="/fonts/Montserrat-Regular.woff" as="font">
+      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
       <title>Магазин цветов</title>
    </head>
 
    <body>
-      <!--block main-->
-      <main id="home">
-         <section>
+      <header>
          <nav class="header-container">
-         <hr>
-         <ul>
-            <li>каталог</li>
-            <li>доставка и оплата</li>
-            <li>отзывы</li>
-            <li><img class="logo" src="images/logo.svg" alt="Logo"></li>
-            <li>спецпредложения</li>
-            <li>контакты </li>
-            <li>корзина</li>
-         </ul>
-         <hr>
+            <a><img class="logo" src="images/logo.svg" alt="Logo Botanica" width="100" height="35"></a>
+            <ul>
+               <li>каталог</li>
+               <li>доставка и оплата</li>
+               <li>отзывы</li>
+               <li>спецпредложения</li>
+               <li>контакты </li>
+               <li>корзина</li>
+            </ul>
          </nav>
-        
-         <div>
-            <h1> Авторские букеты в <i>Петербурге</i></h1>
+      </header>
+
+<!--block main-->
+      <main id="home">
+         <section  class="about-main">
+            <h1> Авторские букеты в <span>Петербурге</span></h1>     
             <p>Оригинальные свежие букеты с доставкой по всему городу</p>
-            <button class="main-btn">Смотреть каталог</button> 
-            <img class="img-main" src="files/anna-tukhfatullina-food-photographer-stylist-bq6Gd7pQznU-unsplash 1.jpg" alt="anna_bunch" width="386" height="404">
-            <img class="img-main" src="files/taisiia-shestopal-JZDyFwGAEqY-unsplash 1.jpg" alt="taisiia_bunch" width="387" height="420">
-         </div>
-       </section>
-      </main>   
-   
+               <a><button type="button" class="main-btn"><span>Смотреть каталог</span></button></a>
+               <img class="img-main" src="files/anna-tukhfatullina-food-photographer-stylist-bq6Gd7pQznU-unsplash 1.jpg" alt="tulip_bunch" width="386" height="404">
+               <img class="img-main" src="files/taisiia-shestopal-JZDyFwGAEqY-unsplash 1.jpg" alt="pink_rose_bunch" width="387" height="420">
+         </section>
       <!--block features-->
-      <section class="features">
-      <div class="feature-delivery">
-         <h4>Быстрая доставка</h4>
-         <p>Можем собрать букет и передать его в доставку всего за час.</p>
+      <div class="features">
+         <dl class="feature-delivery">
+            <dt>Быстрая доставка</dt>
+            <dd>Можем собрать букет и передать его в доставку всего за час.</dd>
+         </dl>   
+         <dl class="feature-quality">
+            <dt>Всегда свежие цветы</dt>
+            <dd>Тщательно следим за состоянием цветов, а опытные флористы отбирают для букетов каждый цветок.</dd>
+         </dl>
+         <dl class="feature-photo">
+            <dt>Отправляем фото цветов</dt>
+            <dd>Перед доставкой сделаем фотографию букета и отправим вам.</dd>
+         </dl>
       </div>
-      <div class="feature-quality"> 
-         <h4>Всегда свежие цветы</h4>
-         <p>Тщательно следим за состоянием цветов, а опытные флористы отбирают для букетов каждый цветок.</p>
-      </div>
-      <div class="feature-photo">
-         <h4>Отправляем фото цветов</h4>
-         <p>Перед доставкой сделаем фотографию букета и отправим вам.</p>
-      </div>
-      </section>
 
       <!--block popular-->
       <section class="popular">
          <h2>Популярные букеты</h2>
-         <div>
-            <h3>Букет «Нежность»</h3>
-            <p>Элегантный букет, который станет отличным подарком на день рождения или юбилей.</p>
-            <p>30 × 40 см</p>
-            <p>3600 руб.</p>
-            <button class="main-btn">Заказать</button>
-         </div>
-         <img src="files/imgbin_flower-bouquet-cut-flowers-floral-design-garden-roses-png 1.png" alt="bunch_flowers" width="387" height="438">
-         <div class="arrow">
-            <a class="left-arrow"></a>
-            <a class="right-arrow"></a>
+         <div class="slider">
+            <div class="slider-item">
+               <h3>Букет «Нежность»</h3>
+               <p>Элегантный букет, который станет отличным подарком на день рождения или юбилей.</p>
+               <p>30 × 40 см</p>
+               <p>3600 руб.</p>
+               <button class="main-btn">Заказать</button>
+            </div>
+            <div class="slider-item-preview">
+               <img src="files/imgbin_flower-bouquet-cut-flowers-floral-design-garden-roses-png 1.png" alt="white_rose_bunch" width="387" height="438">
+            </div>
+            <div class="slider-controls">
+               <button type="button" class="left-arrow">
+                  <span>назад</span>
+               </button>
+               <button type="button" class="right-arrow">
+                  <span>вперед</span>
+               </button>
+            </div>
          </div>
       </section>
 
       <!--block parts of catalogue-->   
       <section class="catalogue-parts">
-         <a><img src="files/sammi-sP5CaWEN7Do-unsplash 1.jpg" alt="" width="387" height="442"></a>
-         <h2>Свадебные букеты</h2>
-         <p>Букеты для невест</p>
-         <a><img src="files/fresh-beautiful-peony-flowers-vase 1.jpg" alt="" width="387" height="442"></a>
-         <h2>Букеты с пионами</h2>
-         <p>Букеты с сезонными пионами</p>
-         <a><img src="files/alyssa-strohmann-tnpr-hPOta0-unsplash 1.jpg" alt="" width="387" height="442"></a>
-         <h2>Выбрать букет</h2>
-         <p>Букеты в ассортименте</p>
+         <a>
+            <article>   
+               <h2>Свадебные букеты</h2>
+               <p>Букеты для невест</p>
+               <img src="files/sammi-sP5CaWEN7Do-unsplash 1.jpg" alt="fancee-bunch" width="387" height="442">
+            </article> 
+         </a>
+         <a>
+            <article>
+               <h2>Букеты с пионами</h2>
+               <p>Букеты с сезонными пионами</p>
+               <img src="files/fresh-beautiful-peony-flowers-vase 1.jpg" alt="peony-bunch" width="387" height="442">
+            </article>
+         </a>
+         <a>
+            <article>
+               <h2>Выбрать букет</h2>
+               <p>Букеты в ассортименте</p>
+               <img src="files/alyssa-strohmann-tnpr-hPOta0-unsplash 1.jpg" alt="" width="387" height="442">
+            </article>
+         </a>
       </section>
 
       <!--block discount-->
       <section class="discount">
          <h2>Скидка 10% на первый заказ</h2>
          <p>Если заказываете у нас букет впервые — при оформлении заказа введите промокод «Botanika2021» и получите скидку 10%.</p>
-         <img src="files/florist-makes-beautiful-bouquet-studio 1.jpg" alt="" width="590" height="391">
+         <img src="files/florist-makes-beautiful-bouquet-studio 1.jpg" alt="exotic-bunch" width="590" height="391">
       </section>
       
       <!--block steps of order-->
       <section class="steps">
          <h2>4 шага к идеальному букету</h2>
-         <div class="4steps">
-            <div class="let-order">
-               <h4>Заказ</h4>
-               <p>Выберите понравившийся букет из каталога и оформите заказ</p>
-            </div>
-            <div class="details-order">
-               <h4>Уточнение деталей</h4>
-               <p>Наш флорист позвонит вам после оформления заказа, чтобы уточнить детали</p>
-            </div>
-            <div class="payment-order">
-               <h4>Оплата</h4>
-               <p>Оплатить заказ можно онлайн на сайте или при получении</p>
-            </div>
-            <div class="deliver-order">
-               <h4>Доставка</h4>
-               <p>Курьер позвонит за час до прибытия и доставит заказ вовремя</p>
-            </div>
-         </div>
+            <dl class="let-order">
+               <dt>Заказ</dt>
+               <dd>Выберите понравившийся букет из каталога и оформите заказ</dd>
+            </dl>
+            <dl class="details-order">
+               <dt>Уточнение деталей</dt>
+               <dd>Наш флорист позвонит вам после оформления заказа, чтобы уточнить детали</dd>
+            </dl>
+            <dl class="payment-order">
+               <dt>Оплата</dt>
+               <dd>Оплатить заказ можно онлайн на сайте или при получении</dd>
+            </dl>
+            <dl class="deliver-order">
+               <dt>Доставка</dt>
+               <dd>Курьер позвонит за час до прибытия и доставит заказ вовремя</dd>
+            </dl>
       </section>
       
       <!--block news-->
       <section class="news">
          <article>
-         <h2>Следите за нашими новостями</h2>
-         <p>Подписывайтесь на наши соцсети и узнавайте о новинках и акциях первым.</p>
-         <div class="network">
-            <a class="insta" href="#" target="_blank"></a>
-            <a class="facebook" href="#" target="_blank"></a>
-            <a class="twitt" href="#" target="_blank"></a>
-         </div>
+            <h2>Следите за нашими новостями</h2>
+            <p>Подписывайтесь на наши соцсети и узнавайте о новинках и акциях первым.</p>
+            <div class="network">
+               <a class="insta" href="#" target="_blank"></a>
+               <a class="facebook" href="#" target="_blank"></a>
+               <a class="twitt" href="#" target="_blank"></a>
+            </div>
          </article>
          <div>
-            <img src="files/samantha-gades-nysCDwot01c-unsplash 1.jpg" alt="" width="285" height="220">
-            <img src="files/insung-yoon-jRofmV5rPl0-unsplash 1.jpg" alt="" width="285" height="220">
+            <img src="files/samantha-gades-nysCDwot01c-unsplash 1.jpg" alt="rose-bunch" width="285" height="220">
+            <img src="files/insung-yoon-jRofmV5rPl0-unsplash 1.jpg" alt="rose-bunch" width="285" height="220">
          </div>
          <div>
-            <img src="files/demi-he-hPcxvCecdPI-unsplash 1.jpg" alt="" width="387" height="460">
+            <img src="files/demi-he-hPcxvCecdPI-unsplash 1.jpg" alt="букет-гвоздик" width="387" height="460">
          </div>
       </section>
 
       <!--block responses-->
       <section class="responses">
          <h2>Отзывы</h2>
-         <div>
-            <p>Всё очень понравилось! Быстрое оформление заказа, выбор удобного времени доставки. Всем большое спасибо!</p>
-            <p>Марина</p>
-         </div>
-         <div>
-            <p>Внимательные флористы, вежливые. Магазин находится прям рядом с метро. Букет очень понравился, буду ещё заказывать!</p>
-            <p>Татьяна</p>
-         </div>
-         <div>
-            <p>Выбор букетов на любой вкус и цену. Бывают хорошие скидки,а флористы всегда помогут и точно соберут красивый букет!</p>
-            <p>Ольга</p>
-         </div>
+            <blockquote>
+               <p>Всё очень понравилось! Быстрое оформление заказа, выбор удобного времени доставки. Всем большое спасибо!</p>
+            <site>Марина</site>
+         </blockquote>
+            <blockquote>
+             <p>Внимательные флористы, вежливые. Магазин находится прям рядом с метро. Букет очень понравился, буду ещё заказывать!</p>
+            <site>Татьяна</site>
+         </blockquote>
+                     <blockquote><p>Выбор букетов на любой вкус и цену. Бывают хорошие скидки,а флористы всегда помогут и точно соберут красивый букет!</p>
+            <site>Ольга</site>
+         </blockquote>
+
       </section>
       
       <!--block contacts-->
@@ -171,12 +186,12 @@
             </div>
          </div>
       </section>
-      
+   </main>      
       <!--block footer-->
-      <footer>
-         <nav class="footer-container">
-            <ul>
-               <li><a href="#home"><img class="footer-logo" src="images/logo.svg" alt="Logo"></a></li>
+      <footer  class="footer-container">
+         <nav>
+          <a href="#home"><img class="footer-logo" src="images/logo.svg" alt="Logo"></a>
+            <ul >
                <li>каталог</li>
                <li>доставка и оплата</li>
                <li>отзывы</li>
