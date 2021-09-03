@@ -235,20 +235,47 @@ section.popular{
 }
 
 /*responses*/
-.responses{
-   width: 1200px;
-   height: 308px;
-  padding: 40px 120px;
-}
 
 /*contacts*/
+.contacts{
+   margin-top: 83px;
+   position: relative;
+}
 
-.how-connect{
-   margin: 10px;
-   
+.contacts img{
+   width: 100%;
+   height: 100%;
+}
+
+.connection{
+   padding: 40px 115px 65px 35px;
    background-color: #F7FAFC;
    opacity: 0.9;
    border-radius: 12px;
+   position: absolute;
+   left: 17%;
+   bottom: 22%;
+}
+
+.connection h2,p{
+   margin: 0;
+}
+
+.connection h2{
+   margin-bottom: 42px;
+}
+
+.connection :nth-child(2n+1):not(:nth-child(1)){
+   margin-top: 13px;
+   font-weight: bolder;
+}
+.connection :nth-child(2n):not(:nth-child(1)){
+   margin-top: 30px;
+}
+
+.connection a{
+   color: #AE7C78;
+
 }
 
 /*footer*/
