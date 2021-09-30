@@ -39,6 +39,7 @@ header{
    border-top: 1px solid #AE7C78;
    border-bottom: 1px solid #AE7C78;
    text-align: center;
+   position:relative;
 }
 
 header a {
@@ -46,9 +47,10 @@ header a {
 }
 
 .header-logo{
-    position: absolute;
-    transform: translate(-50%, -50%);
-    box-sizing: border-box;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
 }
 
 .menu{
